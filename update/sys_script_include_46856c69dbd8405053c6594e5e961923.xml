@@ -11,7 +11,7 @@
 LICENSE.prototype = {
     initialize: function() {},
 
-    /*MIT License
+    /*MIT Licenses
 
     Copyright(c) 2019 ServiceNow Dev Program
 

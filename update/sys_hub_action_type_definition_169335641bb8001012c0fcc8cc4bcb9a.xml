@@ -1,0 +1,3349 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation>This action gets all projects from Bamboo. It is used for dynamic imput fields which provide a Bamboo project.</annotation>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="Bamboo">50c541b9dbd04010baf42fb7489619cd</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This action gets all projects from Bamboo. It is used for dynamic imput fields which provide a Bamboo project.</description>
+        <ih_action>true</ih_action>
+        <internal_name>get_projects</internal_name>
+        <label_cache>[{"name":"{{step[dc80692d-0787-4e21-b54c-11202ff36f2f].status_code}}","label":"step➛REST step➛Status Code","type":"step","ref":""},{"name":"{{step[dc80692d-0787-4e21-b54c-11202ff36f2f].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":""},{"name":"{{step[ba7194f8-4df1-4db7-8f8d-c7df1f348767].projects}}","label":"step➛Script step➛projects","type":"step","ref":""},{"name":"{{step[dc80692d-0787-4e21-b54c-11202ff36f2f].u_version}}","label":"step➛REST step➛Version","type":"step","ref":""}]</label_cache>
+        <latest_snapshot>83808ee41bf8001012c0fcc8cc4bcb1d</latest_snapshot>
+        <master_snapshot>fd1971201bf8001012c0fcc8cc4bcbd3</master_snapshot>
+        <name>Get Projects</name>
+        <outputs/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:27:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>169335641bb8001012c0fcc8cc4bcb9a</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>Get Projects</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Bamboo Spoke" source="x_snc_bamboo">de259855db98cc1064dcf5861d9619c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_169335641bb8001012c0fcc8cc4bcb9a</sys_update_name>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 16:24:10</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=169335641bb8001012c0fcc8cc4bcb9a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=169335641bb8001012c0fcc8cc4bcb9a"/>
+    <sys_element_mapping action="delete_multiple" query="id=169335641bb8001012c0fcc8cc4bcb9a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>output</field>
+        <id>169335641bb8001012c0fcc8cc4bcb9a</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:54:32</sys_created_on>
+        <sys_id>19c9fd201bf8001012c0fcc8cc4bcb8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:54:32</sys_updated_on>
+        <table>var__m_sys_hub_action_output_169335641bb8001012c0fcc8cc4bcb9a</table>
+        <value>{{step[ba7194f8-4df1-4db7-8f8d-c7df1f348767].projects}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=169335641bb8001012c0fcc8cc4bcb9a^sys_idNOT IN2e5835ec1bb8001012c0fcc8cc4bcbb5,e25835ec1bb8001012c0fcc8cc4bcbe6"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Projects">169335641bb8001012c0fcc8cc4bcb9a</action>
+        <cid>dc80692d-0787-4e21-b54c-11202ff36f2f</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>2e5835ec1bb8001012c0fcc8cc4bcbb5</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 16:03:09</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2e5835ec1bb8001012c0fcc8cc4bcbb5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2e5835ec1bb8001012c0fcc8cc4bcbb5</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>225835ec1bb8001012c0fcc8cc4bcbd5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2e5835ec1bb8001012c0fcc8cc4bcbb5</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>2e5835ec1bb8001012c0fcc8cc4bcbd5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2e5835ec1bb8001012c0fcc8cc4bcbb5</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>665835ec1bb8001012c0fcc8cc4bcbd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"max-result","value":"1000"}]}</value>
+        <variable display_value="">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2e5835ec1bb8001012c0fcc8cc4bcbb5</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>6a5835ec1bb8001012c0fcc8cc4bcbd5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-Type","value":"application/json"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Accept","value":"application/json"}]}</value>
+        <variable display_value="">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2e5835ec1bb8001012c0fcc8cc4bcbb5</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>a25835ec1bb8001012c0fcc8cc4bcbd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2e5835ec1bb8001012c0fcc8cc4bcbb5</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>a65835ec1bb8001012c0fcc8cc4bcbd5</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 16:03:09</sys_updated_on>
+        <value/>
+        <variable display_value="">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2e5835ec1bb8001012c0fcc8cc4bcbb5</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>e25835ec1bb8001012c0fcc8cc4bcbd5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:57:10</sys_updated_on>
+        <value>36876e14db600010baf42fb748961977</value>
+        <variable display_value="">262882f03b23320057a4a2e334efc4f0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2e5835ec1bb8001012c0fcc8cc4bcbb5</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>ee5835ec1bb8001012c0fcc8cc4bcbd5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <value>http://6717513d.ngrok.io</value>
+        <variable display_value="">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2e5835ec1bb8001012c0fcc8cc4bcbb5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>2e5835ec1bb8001012c0fcc8cc4bcbb5</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>ea5835ec1bb8001012c0fcc8cc4bcbd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>2e5835ec1bb8001012c0fcc8cc4bcbb5</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>2a5835ec1bb8001012c0fcc8cc4bcbd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>2e5835ec1bb8001012c0fcc8cc4bcbb5</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>665835ec1bb8001012c0fcc8cc4bcbd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>2e5835ec1bb8001012c0fcc8cc4bcbb5</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>2e5835ec1bb8001012c0fcc8cc4bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>2e5835ec1bb8001012c0fcc8cc4bcbb5</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>a25835ec1bb8001012c0fcc8cc4bcbd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>2e5835ec1bb8001012c0fcc8cc4bcbb5</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>ae5835ec1bb8001012c0fcc8cc4bcbd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>2e5835ec1bb8001012c0fcc8cc4bcbb5</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>ee5835ec1bb8001012c0fcc8cc4bcbd3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 16:03:09</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>/rest/api/{{step[dc80692d-0787-4e21-b54c-11202ff36f2f].u_version}}/project</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>2e5835ec1bb8001012c0fcc8cc4bcbb5</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>6a5835ec1bb8001012c0fcc8cc4bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=2e5835ec1bb8001012c0fcc8cc4bcbb5^sys_idNOT IN5fbb79e01bf8001012c0fcc8cc4bcb8c,e25835ec1bb8001012c0fcc8cc4bcbbd"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>u_version</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Version</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="REST step">2e5835ec1bb8001012c0fcc8cc4bcbb5</model>
+        <model_id>2e5835ec1bb8001012c0fcc8cc4bcbb5</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_2e5835ec1bb8001012c0fcc8cc4bcbb5</name>
+        <next_element/>
+        <order>8</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 16:03:08</sys_created_on>
+        <sys_id>5fbb79e01bf8001012c0fcc8cc4bcb8c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 16:24:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted)</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">2e5835ec1bb8001012c0fcc8cc4bcbb5</model>
+        <model_id>2e5835ec1bb8001012c0fcc8cc4bcbb5</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_2e5835ec1bb8001012c0fcc8cc4bcbb5</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>e25835ec1bb8001012c0fcc8cc4bcbbd</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 16:01:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Projects">169335641bb8001012c0fcc8cc4bcb9a</action>
+        <cid>ba7194f8-4df1-4db7-8f8d-c7df1f348767</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>e25835ec1bb8001012c0fcc8cc4bcbe6</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 16:24:03</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e25835ec1bb8001012c0fcc8cc4bcbe6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e25835ec1bb8001012c0fcc8cc4bcbe6</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>a25875ec1bb8001012c0fcc8cc4bcb07</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:54:32</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+  var projects = [];
+  if (inputs.status_code == '200') {
+    var response = JSON.parse(inputs.response_body);
+    for (var i = 0; i &lt; response.projects.project.length; i++) {
+      var project = response.projects.project[i];
+      var listEntry = {'label': project.name + "(" + project.key + ")",
+                       'name': project.key};
+      projects.push(listEntry);
+    }
+    projects.sort(function(a, b) { return a.label &lt; b.label ? -1 : 1 });
+  }
+  outputs.projects = {'data': projects}
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e25835ec1bb8001012c0fcc8cc4bcbe6</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>ee5875ec1bb8001012c0fcc8cc4bcb06</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e25835ec1bb8001012c0fcc8cc4bcbe6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>e25835ec1bb8001012c0fcc8cc4bcbe6</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>aa5875ec1bb8001012c0fcc8cc4bcb06</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response_body</field>
+        <id>e25835ec1bb8001012c0fcc8cc4bcbe6</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>2e5875ec1bb8001012c0fcc8cc4bcb07</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 16:24:03</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_e25835ec1bb8001012c0fcc8cc4bcbe6</table>
+        <value>{{step[dc80692d-0787-4e21-b54c-11202ff36f2f].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>e25835ec1bb8001012c0fcc8cc4bcbe6</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>6e5875ec1bb8001012c0fcc8cc4bcb06</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status_code</field>
+        <id>e25835ec1bb8001012c0fcc8cc4bcbe6</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>ee5875ec1bb8001012c0fcc8cc4bcb07</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 16:24:03</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_e25835ec1bb8001012c0fcc8cc4bcbe6</table>
+        <value>{{step[dc80692d-0787-4e21-b54c-11202ff36f2f].status_code}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=e25835ec1bb8001012c0fcc8cc4bcbe6^sys_idNOT INa25835ec1bb8001012c0fcc8cc4bcbee,ae5835ec1bb8001012c0fcc8cc4bcbe9"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response_body</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">e25835ec1bb8001012c0fcc8cc4bcbe6</model>
+        <model_id>e25835ec1bb8001012c0fcc8cc4bcbe6</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_e25835ec1bb8001012c0fcc8cc4bcbe6</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>a25835ec1bb8001012c0fcc8cc4bcbee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status_code</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">e25835ec1bb8001012c0fcc8cc4bcbe6</model>
+        <model_id>e25835ec1bb8001012c0fcc8cc4bcbe6</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_e25835ec1bb8001012c0fcc8cc4bcbe6</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>ae5835ec1bb8001012c0fcc8cc4bcbe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=e25835ec1bb8001012c0fcc8cc4bcbe6^sys_idNOT INc9c9fd201bf8001012c0fcc8cc4bcb71"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>projects</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>projects</label>
+        <mandatory>true</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Script step">e25835ec1bb8001012c0fcc8cc4bcbe6</model>
+        <model_id>e25835ec1bb8001012c0fcc8cc4bcbe6</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_e25835ec1bb8001012c0fcc8cc4bcbe6</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:54:31</sys_created_on>
+        <sys_id>c9c9fd201bf8001012c0fcc8cc4bcb71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:54:31</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_action_output action="delete_multiple" query="model=169335641bb8001012c0fcc8cc4bcb9a^sys_idNOT IN95c9fd201bf8001012c0fcc8cc4bcb85"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>output</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>output</label>
+        <mandatory>true</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Get Projects">169335641bb8001012c0fcc8cc4bcb9a</model>
+        <model_id>169335641bb8001012c0fcc8cc4bcb9a</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_169335641bb8001012c0fcc8cc4bcb9a</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:54:32</sys_created_on>
+        <sys_id>95c9fd201bf8001012c0fcc8cc4bcb85</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:54:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_step_instance action="delete_multiple" query="action=169335641bb8001012c0fcc8cc4bcb9a^sys_idNOT IN2e5835ec1bb8001012c0fcc8cc4bcbb5,e25835ec1bb8001012c0fcc8cc4bcbe6"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Projects">169335641bb8001012c0fcc8cc4bcb9a</action>
+        <cid>dc80692d-0787-4e21-b54c-11202ff36f2f</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>2e5835ec1bb8001012c0fcc8cc4bcbb5</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 16:03:09</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2e5835ec1bb8001012c0fcc8cc4bcbb5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2e5835ec1bb8001012c0fcc8cc4bcbb5</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>225835ec1bb8001012c0fcc8cc4bcbd5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2e5835ec1bb8001012c0fcc8cc4bcbb5</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>2e5835ec1bb8001012c0fcc8cc4bcbd5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2e5835ec1bb8001012c0fcc8cc4bcbb5</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>665835ec1bb8001012c0fcc8cc4bcbd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"max-result","value":"1000"}]}</value>
+        <variable display_value="">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2e5835ec1bb8001012c0fcc8cc4bcbb5</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>6a5835ec1bb8001012c0fcc8cc4bcbd5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-Type","value":"application/json"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Accept","value":"application/json"}]}</value>
+        <variable display_value="">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2e5835ec1bb8001012c0fcc8cc4bcbb5</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>a25835ec1bb8001012c0fcc8cc4bcbd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2e5835ec1bb8001012c0fcc8cc4bcbb5</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>a65835ec1bb8001012c0fcc8cc4bcbd5</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 16:03:09</sys_updated_on>
+        <value/>
+        <variable display_value="">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2e5835ec1bb8001012c0fcc8cc4bcbb5</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>e25835ec1bb8001012c0fcc8cc4bcbd5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:57:10</sys_updated_on>
+        <value>36876e14db600010baf42fb748961977</value>
+        <variable display_value="">262882f03b23320057a4a2e334efc4f0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2e5835ec1bb8001012c0fcc8cc4bcbb5</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>ee5835ec1bb8001012c0fcc8cc4bcbd5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <value>http://6717513d.ngrok.io</value>
+        <variable display_value="">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2e5835ec1bb8001012c0fcc8cc4bcbb5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>2e5835ec1bb8001012c0fcc8cc4bcbb5</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>ea5835ec1bb8001012c0fcc8cc4bcbd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>2e5835ec1bb8001012c0fcc8cc4bcbb5</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>2a5835ec1bb8001012c0fcc8cc4bcbd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>2e5835ec1bb8001012c0fcc8cc4bcbb5</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>665835ec1bb8001012c0fcc8cc4bcbd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>2e5835ec1bb8001012c0fcc8cc4bcbb5</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>2e5835ec1bb8001012c0fcc8cc4bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>2e5835ec1bb8001012c0fcc8cc4bcbb5</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>a25835ec1bb8001012c0fcc8cc4bcbd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>2e5835ec1bb8001012c0fcc8cc4bcbb5</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>ae5835ec1bb8001012c0fcc8cc4bcbd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>2e5835ec1bb8001012c0fcc8cc4bcbb5</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>ee5835ec1bb8001012c0fcc8cc4bcbd3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 16:03:09</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>/rest/api/{{step[dc80692d-0787-4e21-b54c-11202ff36f2f].u_version}}/project</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>2e5835ec1bb8001012c0fcc8cc4bcbb5</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>6a5835ec1bb8001012c0fcc8cc4bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=2e5835ec1bb8001012c0fcc8cc4bcbb5^sys_idNOT IN5fbb79e01bf8001012c0fcc8cc4bcb8c,e25835ec1bb8001012c0fcc8cc4bcbbd"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>u_version</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Version</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="REST step">2e5835ec1bb8001012c0fcc8cc4bcbb5</model>
+        <model_id>2e5835ec1bb8001012c0fcc8cc4bcbb5</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_2e5835ec1bb8001012c0fcc8cc4bcbb5</name>
+        <next_element/>
+        <order>8</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 16:03:08</sys_created_on>
+        <sys_id>5fbb79e01bf8001012c0fcc8cc4bcb8c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 16:24:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted)</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">2e5835ec1bb8001012c0fcc8cc4bcbb5</model>
+        <model_id>2e5835ec1bb8001012c0fcc8cc4bcbb5</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_2e5835ec1bb8001012c0fcc8cc4bcbb5</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>e25835ec1bb8001012c0fcc8cc4bcbbd</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 16:01:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Projects">169335641bb8001012c0fcc8cc4bcb9a</action>
+        <cid>ba7194f8-4df1-4db7-8f8d-c7df1f348767</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>e25835ec1bb8001012c0fcc8cc4bcbe6</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 16:24:03</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e25835ec1bb8001012c0fcc8cc4bcbe6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e25835ec1bb8001012c0fcc8cc4bcbe6</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>a25875ec1bb8001012c0fcc8cc4bcb07</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:54:32</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+  var projects = [];
+  if (inputs.status_code == '200') {
+    var response = JSON.parse(inputs.response_body);
+    for (var i = 0; i &lt; response.projects.project.length; i++) {
+      var project = response.projects.project[i];
+      var listEntry = {'label': project.name + "(" + project.key + ")",
+                       'name': project.key};
+      projects.push(listEntry);
+    }
+    projects.sort(function(a, b) { return a.label &lt; b.label ? -1 : 1 });
+  }
+  outputs.projects = {'data': projects}
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e25835ec1bb8001012c0fcc8cc4bcbe6</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>ee5875ec1bb8001012c0fcc8cc4bcb06</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e25835ec1bb8001012c0fcc8cc4bcbe6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>e25835ec1bb8001012c0fcc8cc4bcbe6</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>aa5875ec1bb8001012c0fcc8cc4bcb06</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response_body</field>
+        <id>e25835ec1bb8001012c0fcc8cc4bcbe6</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>2e5875ec1bb8001012c0fcc8cc4bcb07</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 16:24:03</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_e25835ec1bb8001012c0fcc8cc4bcbe6</table>
+        <value>{{step[dc80692d-0787-4e21-b54c-11202ff36f2f].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>e25835ec1bb8001012c0fcc8cc4bcbe6</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>6e5875ec1bb8001012c0fcc8cc4bcb06</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status_code</field>
+        <id>e25835ec1bb8001012c0fcc8cc4bcbe6</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>ee5875ec1bb8001012c0fcc8cc4bcb07</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 16:24:03</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_e25835ec1bb8001012c0fcc8cc4bcbe6</table>
+        <value>{{step[dc80692d-0787-4e21-b54c-11202ff36f2f].status_code}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=e25835ec1bb8001012c0fcc8cc4bcbe6^sys_idNOT INa25835ec1bb8001012c0fcc8cc4bcbee,ae5835ec1bb8001012c0fcc8cc4bcbe9"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response_body</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">e25835ec1bb8001012c0fcc8cc4bcbe6</model>
+        <model_id>e25835ec1bb8001012c0fcc8cc4bcbe6</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_e25835ec1bb8001012c0fcc8cc4bcbe6</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>a25835ec1bb8001012c0fcc8cc4bcbee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status_code</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">e25835ec1bb8001012c0fcc8cc4bcbe6</model>
+        <model_id>e25835ec1bb8001012c0fcc8cc4bcbe6</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_e25835ec1bb8001012c0fcc8cc4bcbe6</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:48:20</sys_created_on>
+        <sys_id>ae5835ec1bb8001012c0fcc8cc4bcbe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:48:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=e25835ec1bb8001012c0fcc8cc4bcbe6^sys_idNOT INc9c9fd201bf8001012c0fcc8cc4bcb71"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>projects</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>projects</label>
+        <mandatory>true</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Script step">e25835ec1bb8001012c0fcc8cc4bcbe6</model>
+        <model_id>e25835ec1bb8001012c0fcc8cc4bcbe6</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_e25835ec1bb8001012c0fcc8cc4bcbe6</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:54:31</sys_created_on>
+        <sys_id>c9c9fd201bf8001012c0fcc8cc4bcb71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:54:31</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_169335641bb8001012c0fcc8cc4bcb9a^sys_idNOT IN55c9fd201bf8001012c0fcc8cc4bcb8a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>output</element>
+        <help/>
+        <hint/>
+        <label>output</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_169335641bb8001012c0fcc8cc4bcb9a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:54:32</sys_created_on>
+        <sys_id>55c9fd201bf8001012c0fcc8cc4bcb8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>output</sys_name>
+        <sys_package display_value="Bamboo Spoke" source="x_snc_bamboo">de259855db98cc1064dcf5861d9619c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_169335641bb8001012c0fcc8cc4bcb9a_output_en</sys_update_name>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:54:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=169335641bb8001012c0fcc8cc4bcb9a^sys_idNOT IN0219b1201bf8001012c0fcc8cc4bcb54"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Get Projects">169335641bb8001012c0fcc8cc4bcb9a</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"0219b1201bf8001012c0fcc8cc4bcb54","name":"plan"}}</plan>
+        <snapshot>756bb1e01bf8001012c0fcc8cc4bcb23</snapshot>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0219b1201bf8001012c0fcc8cc4bcb54</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 16:01:42</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <annotation>This action gets all projects from Bamboo. It is used for dynamic imput fields which provide a Bamboo project.</annotation>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="Bamboo">50c541b9dbd04010baf42fb7489619cd</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This action gets all projects from Bamboo. It is used for dynamic imput fields which provide a Bamboo project.</description>
+        <internal_name>get_projects</internal_name>
+        <label_cache>[{"name":"{{step[dc80692d-0787-4e21-b54c-11202ff36f2f].status_code}}","label":"step➛REST step➛Status Code","type":"step","ref":""},{"name":"{{step[dc80692d-0787-4e21-b54c-11202ff36f2f].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":""},{"name":"{{step[ba7194f8-4df1-4db7-8f8d-c7df1f348767].projects}}","label":"step➛Script step➛projects","type":"step","ref":""},{"name":"{{step[dc80692d-0787-4e21-b54c-11202ff36f2f].u_version}}","label":"step➛REST step➛Version","type":"step","ref":""}]</label_cache>
+        <master>true</master>
+        <name>Get Projects</name>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Get Projects">169335641bb8001012c0fcc8cc4bcb9a</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fd1971201bf8001012c0fcc8cc4bcbd3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 16:24:10</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=fd1971201bf8001012c0fcc8cc4bcbd3"/>
+    <sys_variable_value action="delete_multiple" query="document_key=fd1971201bf8001012c0fcc8cc4bcbd3"/>
+    <sys_element_mapping action="delete_multiple" query="id=fd1971201bf8001012c0fcc8cc4bcbd3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>output</field>
+        <id>fd1971201bf8001012c0fcc8cc4bcbd3</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:55:16</sys_created_on>
+        <sys_id>8cf9f1601bf8001012c0fcc8cc4bcbd5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:55:16</sys_updated_on>
+        <table>var__m_sys_hub_action_output_fd1971201bf8001012c0fcc8cc4bcbd3</table>
+        <value>{{step[ba7194f8-4df1-4db7-8f8d-c7df1f348767].projects}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=fd1971201bf8001012c0fcc8cc4bcbd3^sys_idNOT INb91971201bf8001012c0fcc8cc4bcbeb,f51971201bf8001012c0fcc8cc4bcbd5"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Projects">fd1971201bf8001012c0fcc8cc4bcbd3</action>
+        <cid>ba7194f8-4df1-4db7-8f8d-c7df1f348767</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>b91971201bf8001012c0fcc8cc4bcbeb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:55:16</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b91971201bf8001012c0fcc8cc4bcbeb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b91971201bf8001012c0fcc8cc4bcbeb</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>b119b1201bf8001012c0fcc8cc4bcb01</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:55:16</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+  var projects = [];
+  if (inputs.status_code == '200') {
+    var response = JSON.parse(inputs.response_body);
+    for (var i = 0; i &lt; response.projects.project.length; i++) {
+      var project = response.projects.project[i];
+      var listEntry = {'label': project.name + "(" + project.key + ")",
+                       'name': project.key};
+      projects.push(listEntry);
+    }
+    projects.sort(function(a, b) { return a.label &lt; b.label ? -1 : 1 });
+  }
+  outputs.projects = {'data': projects}
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b91971201bf8001012c0fcc8cc4bcbeb</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>fd19b1201bf8001012c0fcc8cc4bcb00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b91971201bf8001012c0fcc8cc4bcbeb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>b91971201bf8001012c0fcc8cc4bcbeb</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>b919b1201bf8001012c0fcc8cc4bcb00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response_body</field>
+        <id>b91971201bf8001012c0fcc8cc4bcbeb</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>3d19b1201bf8001012c0fcc8cc4bcb01</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_b91971201bf8001012c0fcc8cc4bcbeb</table>
+        <value>{{step[dc80692d-0787-4e21-b54c-11202ff36f2f].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>b91971201bf8001012c0fcc8cc4bcbeb</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>7d19b1201bf8001012c0fcc8cc4bcb00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status_code</field>
+        <id>b91971201bf8001012c0fcc8cc4bcbeb</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>fd19b1201bf8001012c0fcc8cc4bcb01</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_b91971201bf8001012c0fcc8cc4bcbeb</table>
+        <value>{{step[dc80692d-0787-4e21-b54c-11202ff36f2f].status_code}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=b91971201bf8001012c0fcc8cc4bcbeb^sys_idNOT INb51971201bf8001012c0fcc8cc4bcbee,f91971201bf8001012c0fcc8cc4bcbf3"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status_code</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>status_code</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">b91971201bf8001012c0fcc8cc4bcbeb</model>
+        <model_id>b91971201bf8001012c0fcc8cc4bcbeb</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_b91971201bf8001012c0fcc8cc4bcbeb</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>b51971201bf8001012c0fcc8cc4bcbee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response_body</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>response_body</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">b91971201bf8001012c0fcc8cc4bcbeb</model>
+        <model_id>b91971201bf8001012c0fcc8cc4bcbeb</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_b91971201bf8001012c0fcc8cc4bcbeb</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>f91971201bf8001012c0fcc8cc4bcbf3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=b91971201bf8001012c0fcc8cc4bcbeb^sys_idNOT IN73e9f1601bf8001012c0fcc8cc4bcbb0"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>projects</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>projects</label>
+        <mandatory>true</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Script step">b91971201bf8001012c0fcc8cc4bcbeb</model>
+        <model_id>b91971201bf8001012c0fcc8cc4bcbeb</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_b91971201bf8001012c0fcc8cc4bcbeb</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:55:15</sys_created_on>
+        <sys_id>73e9f1601bf8001012c0fcc8cc4bcbb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:55:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Projects">fd1971201bf8001012c0fcc8cc4bcbd3</action>
+        <cid>dc80692d-0787-4e21-b54c-11202ff36f2f</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:33</sys_created_on>
+        <sys_id>f51971201bf8001012c0fcc8cc4bcbd5</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 16:24:10</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f51971201bf8001012c0fcc8cc4bcbd5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f51971201bf8001012c0fcc8cc4bcbd5</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>311971201bf8001012c0fcc8cc4bcbe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f51971201bf8001012c0fcc8cc4bcbd5</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>351971201bf8001012c0fcc8cc4bcbe7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 16:24:10</sys_updated_on>
+        <value/>
+        <variable display_value="">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f51971201bf8001012c0fcc8cc4bcbd5</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>711971201bf8001012c0fcc8cc4bcbe7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 16:01:40</sys_updated_on>
+        <value>36876e14db600010baf42fb748961977</value>
+        <variable display_value="">262882f03b23320057a4a2e334efc4f0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f51971201bf8001012c0fcc8cc4bcbd5</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>7d1971201bf8001012c0fcc8cc4bcbe7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <value>http://6717513d.ngrok.io</value>
+        <variable display_value="">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f51971201bf8001012c0fcc8cc4bcbd5</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>b91971201bf8001012c0fcc8cc4bcbe7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f51971201bf8001012c0fcc8cc4bcbd5</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>bd1971201bf8001012c0fcc8cc4bcbe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f51971201bf8001012c0fcc8cc4bcbd5</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>f11971201bf8001012c0fcc8cc4bcbe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"max-result","value":"1000"}]}</value>
+        <variable display_value="">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f51971201bf8001012c0fcc8cc4bcbd5</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>f51971201bf8001012c0fcc8cc4bcbe7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-Type","value":"application/json"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Accept","value":"application/json"}]}</value>
+        <variable display_value="">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f51971201bf8001012c0fcc8cc4bcbd5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>f51971201bf8001012c0fcc8cc4bcbd5</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>791971201bf8001012c0fcc8cc4bcbe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>f51971201bf8001012c0fcc8cc4bcbd5</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>b51971201bf8001012c0fcc8cc4bcbe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>f51971201bf8001012c0fcc8cc4bcbd5</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>f11971201bf8001012c0fcc8cc4bcbe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>f51971201bf8001012c0fcc8cc4bcbd5</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>b91971201bf8001012c0fcc8cc4bcbe5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>f51971201bf8001012c0fcc8cc4bcbd5</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>311971201bf8001012c0fcc8cc4bcbe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>f51971201bf8001012c0fcc8cc4bcbd5</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>3d1971201bf8001012c0fcc8cc4bcbe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>f51971201bf8001012c0fcc8cc4bcbd5</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>7d1971201bf8001012c0fcc8cc4bcbe5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 16:24:10</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>/rest/api/{{step[dc80692d-0787-4e21-b54c-11202ff36f2f].u_version}}/project</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>f51971201bf8001012c0fcc8cc4bcbd5</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>f51971201bf8001012c0fcc8cc4bcbe5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=f51971201bf8001012c0fcc8cc4bcbd5^sys_idNOT INdb808ee41bf8001012c0fcc8cc4bcb88,f51971201bf8001012c0fcc8cc4bcbdb"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>u_version</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Version</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="REST step">f51971201bf8001012c0fcc8cc4bcbd5</model>
+        <model_id>f51971201bf8001012c0fcc8cc4bcbd5</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_f51971201bf8001012c0fcc8cc4bcbd5</name>
+        <next_element/>
+        <order>8</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 16:24:10</sys_created_on>
+        <sys_id>db808ee41bf8001012c0fcc8cc4bcb88</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 16:24:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted)</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">f51971201bf8001012c0fcc8cc4bcbd5</model>
+        <model_id>f51971201bf8001012c0fcc8cc4bcbd5</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_f51971201bf8001012c0fcc8cc4bcbd5</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:33</sys_created_on>
+        <sys_id>f51971201bf8001012c0fcc8cc4bcbdb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_action_output action="delete_multiple" query="model=fd1971201bf8001012c0fcc8cc4bcbd3^sys_idNOT IN80f9f1601bf8001012c0fcc8cc4bcbcf"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>output</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>output</label>
+        <mandatory>true</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Get Projects">fd1971201bf8001012c0fcc8cc4bcbd3</model>
+        <model_id>fd1971201bf8001012c0fcc8cc4bcbd3</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_fd1971201bf8001012c0fcc8cc4bcbd3</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:55:16</sys_created_on>
+        <sys_id>80f9f1601bf8001012c0fcc8cc4bcbcf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:55:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_step_instance action="delete_multiple" query="action=fd1971201bf8001012c0fcc8cc4bcbd3^sys_idNOT INb91971201bf8001012c0fcc8cc4bcbeb,f51971201bf8001012c0fcc8cc4bcbd5"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Projects">fd1971201bf8001012c0fcc8cc4bcbd3</action>
+        <cid>ba7194f8-4df1-4db7-8f8d-c7df1f348767</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>b91971201bf8001012c0fcc8cc4bcbeb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:55:16</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b91971201bf8001012c0fcc8cc4bcbeb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b91971201bf8001012c0fcc8cc4bcbeb</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>b119b1201bf8001012c0fcc8cc4bcb01</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:55:16</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+  var projects = [];
+  if (inputs.status_code == '200') {
+    var response = JSON.parse(inputs.response_body);
+    for (var i = 0; i &lt; response.projects.project.length; i++) {
+      var project = response.projects.project[i];
+      var listEntry = {'label': project.name + "(" + project.key + ")",
+                       'name': project.key};
+      projects.push(listEntry);
+    }
+    projects.sort(function(a, b) { return a.label &lt; b.label ? -1 : 1 });
+  }
+  outputs.projects = {'data': projects}
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b91971201bf8001012c0fcc8cc4bcbeb</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>fd19b1201bf8001012c0fcc8cc4bcb00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b91971201bf8001012c0fcc8cc4bcbeb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>b91971201bf8001012c0fcc8cc4bcbeb</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>b919b1201bf8001012c0fcc8cc4bcb00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response_body</field>
+        <id>b91971201bf8001012c0fcc8cc4bcbeb</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>3d19b1201bf8001012c0fcc8cc4bcb01</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_b91971201bf8001012c0fcc8cc4bcbeb</table>
+        <value>{{step[dc80692d-0787-4e21-b54c-11202ff36f2f].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>b91971201bf8001012c0fcc8cc4bcbeb</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>7d19b1201bf8001012c0fcc8cc4bcb00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status_code</field>
+        <id>b91971201bf8001012c0fcc8cc4bcbeb</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>fd19b1201bf8001012c0fcc8cc4bcb01</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_b91971201bf8001012c0fcc8cc4bcbeb</table>
+        <value>{{step[dc80692d-0787-4e21-b54c-11202ff36f2f].status_code}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=b91971201bf8001012c0fcc8cc4bcbeb^sys_idNOT INb51971201bf8001012c0fcc8cc4bcbee,f91971201bf8001012c0fcc8cc4bcbf3"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status_code</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>status_code</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">b91971201bf8001012c0fcc8cc4bcbeb</model>
+        <model_id>b91971201bf8001012c0fcc8cc4bcbeb</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_b91971201bf8001012c0fcc8cc4bcbeb</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>b51971201bf8001012c0fcc8cc4bcbee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response_body</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>response_body</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">b91971201bf8001012c0fcc8cc4bcbeb</model>
+        <model_id>b91971201bf8001012c0fcc8cc4bcbeb</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_b91971201bf8001012c0fcc8cc4bcbeb</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>f91971201bf8001012c0fcc8cc4bcbf3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=b91971201bf8001012c0fcc8cc4bcbeb^sys_idNOT IN73e9f1601bf8001012c0fcc8cc4bcbb0"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>projects</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>projects</label>
+        <mandatory>true</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Script step">b91971201bf8001012c0fcc8cc4bcbeb</model>
+        <model_id>b91971201bf8001012c0fcc8cc4bcbeb</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_b91971201bf8001012c0fcc8cc4bcbeb</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:55:15</sys_created_on>
+        <sys_id>73e9f1601bf8001012c0fcc8cc4bcbb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:55:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Projects">fd1971201bf8001012c0fcc8cc4bcbd3</action>
+        <cid>dc80692d-0787-4e21-b54c-11202ff36f2f</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:33</sys_created_on>
+        <sys_id>f51971201bf8001012c0fcc8cc4bcbd5</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 16:24:10</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f51971201bf8001012c0fcc8cc4bcbd5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f51971201bf8001012c0fcc8cc4bcbd5</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>311971201bf8001012c0fcc8cc4bcbe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f51971201bf8001012c0fcc8cc4bcbd5</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>351971201bf8001012c0fcc8cc4bcbe7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 16:24:10</sys_updated_on>
+        <value/>
+        <variable display_value="">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f51971201bf8001012c0fcc8cc4bcbd5</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>711971201bf8001012c0fcc8cc4bcbe7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 16:01:40</sys_updated_on>
+        <value>36876e14db600010baf42fb748961977</value>
+        <variable display_value="">262882f03b23320057a4a2e334efc4f0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f51971201bf8001012c0fcc8cc4bcbd5</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>7d1971201bf8001012c0fcc8cc4bcbe7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <value>http://6717513d.ngrok.io</value>
+        <variable display_value="">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f51971201bf8001012c0fcc8cc4bcbd5</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>b91971201bf8001012c0fcc8cc4bcbe7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f51971201bf8001012c0fcc8cc4bcbd5</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>bd1971201bf8001012c0fcc8cc4bcbe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f51971201bf8001012c0fcc8cc4bcbd5</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>f11971201bf8001012c0fcc8cc4bcbe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"max-result","value":"1000"}]}</value>
+        <variable display_value="">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f51971201bf8001012c0fcc8cc4bcbd5</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>f51971201bf8001012c0fcc8cc4bcbe7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-Type","value":"application/json"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Accept","value":"application/json"}]}</value>
+        <variable display_value="">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f51971201bf8001012c0fcc8cc4bcbd5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>f51971201bf8001012c0fcc8cc4bcbd5</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>791971201bf8001012c0fcc8cc4bcbe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>f51971201bf8001012c0fcc8cc4bcbd5</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>b51971201bf8001012c0fcc8cc4bcbe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>f51971201bf8001012c0fcc8cc4bcbd5</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>f11971201bf8001012c0fcc8cc4bcbe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>f51971201bf8001012c0fcc8cc4bcbd5</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>b91971201bf8001012c0fcc8cc4bcbe5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>f51971201bf8001012c0fcc8cc4bcbd5</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>311971201bf8001012c0fcc8cc4bcbe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>f51971201bf8001012c0fcc8cc4bcbd5</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>3d1971201bf8001012c0fcc8cc4bcbe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>f51971201bf8001012c0fcc8cc4bcbd5</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>7d1971201bf8001012c0fcc8cc4bcbe5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 16:24:10</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>/rest/api/{{step[dc80692d-0787-4e21-b54c-11202ff36f2f].u_version}}/project</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>f51971201bf8001012c0fcc8cc4bcbd5</id>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:34</sys_created_on>
+        <sys_id>f51971201bf8001012c0fcc8cc4bcbe5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=f51971201bf8001012c0fcc8cc4bcbd5^sys_idNOT INdb808ee41bf8001012c0fcc8cc4bcb88,f51971201bf8001012c0fcc8cc4bcbdb"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>u_version</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Version</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="REST step">f51971201bf8001012c0fcc8cc4bcbd5</model>
+        <model_id>f51971201bf8001012c0fcc8cc4bcbd5</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_f51971201bf8001012c0fcc8cc4bcbd5</name>
+        <next_element/>
+        <order>8</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 16:24:10</sys_created_on>
+        <sys_id>db808ee41bf8001012c0fcc8cc4bcb88</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 16:24:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted)</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">f51971201bf8001012c0fcc8cc4bcbd5</model>
+        <model_id>f51971201bf8001012c0fcc8cc4bcbd5</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_f51971201bf8001012c0fcc8cc4bcbd5</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:51:33</sys_created_on>
+        <sys_id>f51971201bf8001012c0fcc8cc4bcbdb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:51:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_fd1971201bf8001012c0fcc8cc4bcbd3^sys_idNOT INc8f9f1601bf8001012c0fcc8cc4bcbd3"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>output</element>
+        <help/>
+        <hint/>
+        <label>output</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_fd1971201bf8001012c0fcc8cc4bcbd3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>avotom</sys_created_by>
+        <sys_created_on>2019-10-26 15:55:16</sys_created_on>
+        <sys_id>c8f9f1601bf8001012c0fcc8cc4bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>output</sys_name>
+        <sys_package display_value="Bamboo Spoke" source="x_snc_bamboo">de259855db98cc1064dcf5861d9619c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bamboo Spoke">de259855db98cc1064dcf5861d9619c0</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_fd1971201bf8001012c0fcc8cc4bcbd3_output_en</sys_update_name>
+        <sys_updated_by>avotom</sys_updated_by>
+        <sys_updated_on>2019-10-26 15:55:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>
